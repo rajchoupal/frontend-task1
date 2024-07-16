@@ -1,0 +1,305 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 15px;
+}
+
+/* Custom image styles */
+.custom-img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .text-uppercase {
+        font-size: 1.5rem;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .mb-lg-4, .mb-lg-5 {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .custom-img {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-uppercase {
+        font-size: 1.25rem;
+    }
+
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .custom-img {
+        margin-top: 15px;
+    }
+}
+
+/*what do*/
+#services .service-item {
+    position: relative;
+    overflow: hidden;
+}
+
+#services .hover-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff3147;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#services .service-item:hover .hover-content {
+    display: flex;
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.right-section {
+    flex: 1;
+    background-color: #f8f9fa; /* light grey background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.text-danger {
+    color: #dc3545; /* Bootstrap's text-danger color */
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.paragraph p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+.dot-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    height: 5px;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer; /* Make the dots clickable */
+}
+
+.border-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px; /* 24px + 2*2px border */
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid red;
+    margin-top: 7px;
+}
+
+.red-dot {
+    background-color: red;
+    width: 7px; /* Size of the black dot */
+    height: 7px; /* Size of the black dot */
+}
+
+.black-dot2 {
+    background-color: black;
+    width: 7px; /* Size of the black dot */
+    height: 7px;
+    margin-top: 17px;
+}
+/*why choose us */
+.why-choose-us {
+    padding: 50px 0;
+}
+.why-choose-us h2 {
+    color: #f00;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.why-choose-us h3 {
+    margin-bottom: 30px;
+   
+}
+.SH h3{
+    text-align: center;
+}
+.why-choose-us .card {
+    border: none;
+    padding: 15px;
+}
+.why-choose-us .card img {
+    width: 72px;
+    height: 83.72px;
+    overflow: clip;
+    margin-left:20px;
+    
+}
+.why-choose-us .card p {
+        margin-top: 2px;
+    }
+
+.why-choose-us .card h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 5px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+
+    }
+    .hp{
+        margin-right: 100px;
+    }
+
+    /*our project*/
+    .content-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .image-section {
+        flex: 1;
+        padding: 20px;
+    }
+    .content-list {
+        flex: 1;
+        padding: 20px;
+    }
+    .content-item {
+        padding: 10px;
+        cursor: pointer;
+    }
+    .content-item.active {
+        background-color:#ff3147;
+    }
+
+    /*company growth */
+    .company-growth {
+        background-color: #f8f9fa;
+    }
+    
+    .growth-item {
+        background-color: white;
+        border-radius: 8px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .growth-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .icon {
+        font-size: 2rem;
+        color: #e74c3c;
+    }
+
+
+    /*client feedback */
+    #feedback {
+        background: #ffffff;
+        color: black;
+        padding: 100px 0;
+    }
+    
+    .heading {
+        text-align: center;
+    }
+    .heading span {
+        color: #ff3147;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .heading h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 25px;
+    }
+    .feed-parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./images/Quotemarks-left.svg);
+        background-repeat: no-repeat;
+        background-size: 6%;
+        background-position-x: 150px;
+        background-position-y: 23px;
+    }
+    .mar-1 {
+        margin-top: 40px;
+    }
+    .feedbacks {
+        flex-basis: 70%;
+    }
+    .feedbacks h3 {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .feedbacks span {
+        color: #ff3147;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .feedbacks span:nth-of-type(2) {
+        color: #808080;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+
+    /*footer*/
+    .bg-red {
+        background-color: #d32f2f;
+        padding: 20px 0;
+        margin-top:40px;
+    }
+    
+    
